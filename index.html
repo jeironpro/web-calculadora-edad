@@ -1,25 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de edad</title>
-    <link rel="icon" href="icon/calculadora.png">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Una calculadora de edad moderna y visualmente atractiva." />
+    <title>Calculadora de Edad</title>
+    <link rel="icon" href="icon/calculadora.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <div class="contenedor">
-        <div class="contenedor-titulo">
-            <h1>Calculadora de edad</h1>
-        </div>
-        <div class="contenedor-calculadora">
-            <label for="fecha">¿Fecha de nacimiento?</label>
-            <input type="date" id="fecha">
-            <button onclick="calcular()">Calcular</button>
-        </div>
-        <p id="edad"></p>
-    </div>
-    <script src="app.js"></script>
+    <main class="contenedor-principal">
+        <header class="encabezado">
+            <h1>Calculadora de Edad</h1>
+            <p class="subtitulo">Descubre tu edad exacta en años, meses y días</p>
+        </header>
+        <section class="seccion-calculadora">
+            <div class="grupo-entrada">
+                <label for="fecha">Fecha de Nacimiento</label>
+                <input type="date" id="fecha" aria-label="Selecciona tu fecha de nacimiento" />
+            </div>
+
+            <button onclick="calcular()" class="boton-calcular" id="botonCalcular">
+                Calcular Edad
+            </button>
+        </section>
+        <section class="seccion-resultado" id="seccionResultado">
+            <div class="tarjeta-resultado oculto" id="tarjetaResultado">
+                <p id="textoEdad" class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
 </body>
 </html>
