@@ -1,4 +1,4 @@
-# calculadora-edad
+# web-calculadora-edad
 
 ## 📌 Descripción
 Este proyecto forma parte de mi portafolio personal.  
